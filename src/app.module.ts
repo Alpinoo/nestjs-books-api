@@ -8,9 +8,10 @@ import { UsersModule } from './users/users.module';
 import { FeedbackModule } from './feedback/feedback.module';
 import { FeedbackController } from './feedback/feedback.controller';
 import { FeedbackService } from './feedback/feedback.service';
+import { TagsModule } from './tags/tags.module';
 
 @Module({
-  imports: [BooksModule, CommonModule, UsersModule, FeedbackModule],
+  imports: [BooksModule, CommonModule, UsersModule, FeedbackModule, TagsModule],
   controllers: [AppController, FeedbackController],
   providers: [AppService, LoggerService, FeedbackService],
 })
