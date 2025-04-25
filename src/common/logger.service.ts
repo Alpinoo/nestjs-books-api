@@ -22,4 +22,8 @@ export class LoggerService {
   verbose(message: string) {
     this.logger.verbose(message);
   }
+
+  logWithTag(tag: string, message: string) {
+    new Logger(tag).log(message);
+  }
 }
